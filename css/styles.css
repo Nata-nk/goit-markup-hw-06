@@ -52,7 +52,8 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -231,45 +232,35 @@ img {
 /* ----------------SECTIIONONE------------------- */
 
 .sectionone {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .sectionone-list {
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
   flex: shrink 0;
-}
-
-.sectionone-item {
-  width: calc((100% - 72px) / 4);
 }
 
 .sectionone-subtitele {
   color: var(--color-navy-blue-modal);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 .sectionone-text {
   color: var(--color-slate);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  min-width: 264px;
 }
 .sectionone-item-top {
-  width: 264px;
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background: var(--color-cloud);
-  margin-bottom: 8px;
+  display: none;
 }
 
 /* ----------------OURWOK------------------- */
