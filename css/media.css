@@ -3,10 +3,32 @@
     max-width: 426px;
   }
 }
+
+/* -------------------------------TABLET---------------------------------- */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
   }
+
+  /* ----------------HERO------------------- */
+
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/section1/people-officetab.jpg);
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+  /* ----------------SECTIIONONE------------------- */
 
   .sectionone-list {
     gap: 72px 24px;
@@ -21,12 +43,51 @@
   .sectionone-text {
     max-width: 356px;
   }
+
+  /* ----------------OURTEAM------------------- */
+
+  .ourteam-item {
+    max-width: 264px;
+    width: calc((100% - 36px) / 2);
+  }
+
+  .ourteam-list {
+    gap: 64px 24px;
+  }
+
+  /* ----------------CUSTOMERS------------------- */
+
+  .customers-sosial-icon {
+    width: 104px;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
 }
+
+/* -------------------------------DESKTOP---------------------------------- */
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
+
+  /* ----------------HERO------------------- */
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/section1/people-office.jpg);
+    max-width: 1440px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* ----------------SECTIIONONE------------------- */
 
   .sectionone {
     padding: 120px 0;
@@ -59,5 +120,73 @@
     border-radius: 4px;
     background: var(--color-cloud);
     margin-bottom: 8px;
+  }
+
+  /* ----------------OURWOK------------------- */
+
+  .notour-work {
+    display: block;
+  }
+
+  .our-work {
+    padding-bottom: 120px;
+  }
+
+  .our-work-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .our-work-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .our-work-title {
+    color: var(--color-navy-blue-modal);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+
+  /* ----------------OURTEAM------------------- */
+  .ourteam {
+    padding: 120px 0;
+  }
+
+  .ourteam-item {
+    max-width: 264px;
+    width: calc((100% - 72px) / 4);
+  }
+
+  .ourteam-list {
+    gap: 24px;
+  }
+
+  /* ----------------CUSTOMERS------------------- */
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers-sosial-icon {
+    width: 104px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  /* ----------------FOOTER------------------- */
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-logo-box {
+    margin-right: 120px;
   }
 }
