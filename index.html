@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="logo link" href="./index.html">
@@ -56,8 +56,103 @@
             </li>
           </ul>
         </address>
+        <button class="header-menu-open" type="button" data-menu-open>
+          <svg class="header-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob is-hidden" data-menu>
+        <div>
+          <button class="mob-menu-btn" type="button" data-menu-close>
+            <svg class="mob-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address list">
+              <li class="mob-address-item">
+                <a
+                  class="mob-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-sosial-list list">
+            <li class="mob-sosial-item">
+              <a
+                class="mob-sosial-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-sosial-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-sosial-item">
+              <a
+                class="mob-sosial-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-sosial-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-sosial-item">
+              <a
+                class="mob-sosial-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-sosial-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-sosial-item">
+              <a
+                class="mob-sosial-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-sosial-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -128,6 +223,10 @@
           <ul class="our-work-list list">
             <li class="our-work-item">
               <img
+                srcset="
+                  ./images/section2/img1.jpg   1x,
+                  /images/section2/img1-2x.jpg 2x
+                "
                 class="our-work-img"
                 src="./images/section2/img1.jpg"
                 alt="screen"
@@ -136,6 +235,10 @@
             </li>
             <li class="our-work-item">
               <img
+                srcset="
+                  ./images/section2/img2.jpg   1x,
+                  /images/section2/img2-2x.jpg 2x
+                "
                 class="our-work-img"
                 src="./images/section2/img2.jpg"
                 alt="phone screen"
@@ -144,6 +247,10 @@
             </li>
             <li class="our-work-item">
               <img
+                srcset="
+                  ./images/section2/img3.jpg   1x,
+                  /images/section2/img3-2x.jpg 2x
+                "
                 class="our-work-img"
                 src="./images/section2/img3.jpg"
                 alt="phone in hands"
@@ -159,6 +266,10 @@
           <ul class="ourteam-list list">
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/section3/img1.jpg   1x,
+                  /images/section3/img1-2x.jpg 2x
+                "
                 class="ourteam-item-img"
                 src="./images/section3/img1.jpg"
                 alt="Mark Guerrero"
@@ -221,6 +332,10 @@
             </li>
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/section3/img2.jpg   1x,
+                  /images/section3/img2-2x.jpg 2x
+                "
                 class="ourteam-item-img"
                 src="./images/section3/img2.jpg"
                 alt="Tom Ford"
@@ -283,6 +398,10 @@
             </li>
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/section3/img3.jpg   1x,
+                  /images/section3/img3-2x.jpg 2x
+                "
                 class="ourteam-item-img"
                 src="./images/section3/img3.jpg"
                 alt="Camila Garcia"
@@ -345,6 +464,10 @@
             </li>
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/section3/img4.jpg   1x,
+                  /images/section3/img4-2x.jpg 2x
+                "
                 class="ourteam-item-img"
                 src="./images/section3/img4.jpg"
                 alt="Daniel Wilson"
@@ -488,7 +611,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-box">
         <div class="footer-logo-box">
           <a class="logo link logofooter" href="./index.html">
@@ -571,7 +694,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backgrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -656,5 +779,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
